@@ -1,0 +1,20 @@
+{
+	"config":
+	{
+        "vendor-dir": ""
+    },
+    "require":
+	{
+        "bcosca/fatfree-core": "^3.6",
+		"gabordemooij/redbean": "^5.2",
+    },
+	"autoload":
+	{
+        "files":
+		[
+			"../application/Functions.php",
+			"../application/System.php",
+			"../application/Database.php"
+		]
+    }
+}
