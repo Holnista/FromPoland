@@ -1,19 +1,9 @@
 Options -MultiViews -Indexes
 RewriteEngine On
 
-#RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
-#RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
-
-#RewriteCond %{HTTPS} !on
-#RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
-
 RewriteBase /
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-l
 RewriteRule .* index.php [L,QSA]
-
-<filesMatch ".(jpg|jpeg|png|gif|ico|svg|css|js|ttf|otf|woff|woff2)$">
-#Header set Cache-Control "max-age=31536000, public"
-</filesMatch>

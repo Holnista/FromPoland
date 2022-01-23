@@ -31,7 +31,7 @@
 			}
 			catch(Exception $error)
 			{
-				//Base::instance()->error(500, $error->getMessage());
+				Base::instance()->error(500, $error->getMessage());
 			}
 		}
 	}
